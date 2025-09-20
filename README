@@ -1,0 +1,35 @@
+cea-asignatura-php-hexagonal/
+│── README.md
+│── .gitignore
+│── src/
+│   ├── domain/
+│   │   ├── model/
+│   │   │   ├── Asignatura.php
+│   │   │   └── Usuario.php
+│   │   ├── repository/
+│   │   │   ├── AsignaturaRepository.php
+│   │   │   └── UsuarioRepository.php
+│   │   ├── services/
+│   │   └── exceptions/
+│   │       └── DomainException.php
+│   ├── application/
+│   │   └── usecases/
+│   │       ├── CrearAsignaturaService.php
+│   │       ├── GestionUsuarioService.php
+│   │       └── LoginUsuarioService.php
+│   ├── infrastructure/
+│   │   ├── persistence/
+│   │   │   ├── MySQLAsignaturaRepository.php
+│   │   │   └── MySQLUsuarioRepository.php
+│   │   ├── web/
+│   │   │   ├── index.php
+│   │   │   ├── asignaturaController.php
+│   │   │   └── usuarioController.php
+│   │   └── config/
+│   │       └── database.php
+│   └── tests/
+│       ├── AsignaturaTest.php
+│       └── UsuarioTest.php
+└── docs/
+    ├── glosario.md
+    └── diagramas/
